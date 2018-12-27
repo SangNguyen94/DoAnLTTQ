@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02393127-ECD3-4072-B6CD-1D3C0A9F3785}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>game2048</RootNamespace>
+    <AssemblyName>game2048</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-dribbble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5e309116173271.562a65a9d1854.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6fd90416173271.562b6258828d7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7ac13e16173271.562b107b764dc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4f2927befb8d8351478d3f867e1cec5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b9226416173271.562a65a9e12bd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\da9bc516173271.562a65cfec7c0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3f8dc16173271.562a65a9ab69b %281%29 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9d9c216173271.562a65a999d32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048-event-edition - Copy %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640e105e282dd4d50d9f229b5ce9dfcb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nenscore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb-2048-animated-edition-romain-cousin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %284%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %285%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %286%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %287%29 %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %288%29 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %289%29 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %2810%29 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 - Copy %2811%29 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048 -8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

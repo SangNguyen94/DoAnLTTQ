@@ -8,3 +8,13 @@ C:\Users\sangpck\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\Game1.
 C:\Users\sangpck\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\Game1.csproj.CoreCompileInputs.cache
 C:\Users\sangpck\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
 C:\Users\sangpck\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe.config
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.pdb
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\Game1.csprojAssemblyReference.cache
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form1.resources
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Properties.Resources.resources
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\Game1.csproj.GenerateResource.cache
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\Game1.csproj.CoreCompileInputs.cache
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+D:\Shuu\Documents\GitHub\DoAnLTTQ\DoAn\CdiablosHunter\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb

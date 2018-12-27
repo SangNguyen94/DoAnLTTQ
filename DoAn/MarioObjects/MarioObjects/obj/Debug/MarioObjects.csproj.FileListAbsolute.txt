@@ -1,0 +1,9 @@
+D:\mario\Mario-Game-master\MarioObjects\bin\Debug\MarioObjects.exe
+D:\mario\Mario-Game-master\MarioObjects\bin\Debug\MarioObjects.pdb
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.csprojAssemblyReference.cache
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.frmMain.resources
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.Properties.Resources.resources
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.csproj.GenerateResource.cache
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.csproj.CoreCompileInputs.cache
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.exe
+D:\mario\Mario-Game-master\MarioObjects\obj\Debug\MarioObjects.pdb
