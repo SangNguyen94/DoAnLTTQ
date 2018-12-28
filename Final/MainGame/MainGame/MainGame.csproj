@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8B60407-A603-4164-8107-C537C01FDE60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MainGame</RootNamespace>
+    <AssemblyName>MainGame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BirdHuntingGame, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BirdHuntingGame.dll</HintPath>
+    </Reference>
+    <Reference Include="BombsAway, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BombsAway.dll</HintPath>
+    </Reference>
+    <Reference Include="game2048, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\game2048.dll</HintPath>
+    </Reference>
+    <Reference Include="MarioObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MarioObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsApp8, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WindowsFormsApp8.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2048.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2048.Designer.cs">
+      <DependentUpon>2048.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirdHunting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirdHunting.Designer.cs">
+      <DependentUpon>BirdHunting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiabolosHunter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiabolosHunter.Designer.cs">
+      <DependentUpon>DiabolosHunter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalForm.Designer.cs">
+      <DependentUpon>FinalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarioPlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarioPlat.Designer.cs">
+      <DependentUpon>MarioPlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarioBomb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarioBomb.Designer.cs">
+      <DependentUpon>MarioBomb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="2048.resx">
+      <DependentUpon>2048.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirdHunting.resx">
+      <DependentUpon>BirdHunting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiabolosHunter.resx">
+      <DependentUpon>DiabolosHunter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalForm.resx">
+      <DependentUpon>FinalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarioPlat.resx">
+      <DependentUpon>MarioPlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarioBomb.resx">
+      <DependentUpon>MarioBomb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diablos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-dribbble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mariobg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mariobgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgwallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victory-icon-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2048.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birdhunter.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mariobomb.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diabolos.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
