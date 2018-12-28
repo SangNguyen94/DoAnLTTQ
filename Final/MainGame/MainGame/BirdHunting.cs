@@ -22,6 +22,8 @@ namespace MainGame
         private void button1_Click(object sender, EventArgs e)
         {
             gameForm.Show();
+            timer2.Enabled = true;
+            timer2.Start();
             gameForm.Closed += (s, arg) => this.Close();
             this.Hide();
         }
@@ -35,7 +37,21 @@ namespace MainGame
                 gameForm.Hide();
                 timer1.Enabled = false;
                 timer1.Stop();
+                timer2.Enabled = false;
+                timer2.Stop();
             }
+        }
+
+        private void BirdHunting_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+            marioBomb.Close();
+            this.Close();
         }
     }
 }

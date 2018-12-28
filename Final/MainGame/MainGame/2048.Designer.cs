@@ -40,6 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +77,7 @@
             this.label3.Size = new System.Drawing.Size(572, 117);
             this.label3.TabIndex = 3;
             this.label3.Text = "First we have cubes of even number.\r\n\r\n\r\n";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -125,7 +127,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(579, 39);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Get over 2048 points to be the victor!!";
+            this.label6.Text = "Get over 1000 points to be the victor!!";
             // 
             // button1
             // 
@@ -145,14 +147,25 @@
             // 
             // timer2
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 10;
+            this.timer2.Interval = 60000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 542);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(576, 39);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "You have 1 minute to play the game!!";
             // 
             // _2048
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -165,6 +178,7 @@
             this.DoubleBuffered = true;
             this.Name = "_2048";
             this.Text = "_2048";
+            this.Load += new System.EventHandler(this._2048_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -185,5 +199,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label7;
     }
 }

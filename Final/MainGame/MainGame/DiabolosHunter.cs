@@ -20,7 +20,8 @@ namespace MainGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //timer2.Enabled = true;
+            //timer2.Start();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,17 +46,27 @@ namespace MainGame
         private void timer1_Tick(object sender, EventArgs e)
         {
            
-                if (form1.isWon == true)
-                {
-                    Mario mario = new Mario();
-                    mario.Show();
-                    
-                    mario.Closed += (s, arg) => this.Close();
-                    form1.Hide();
-                    timer1.Enabled = false;
-                    timer1.Stop();
-                }
+            if (form1.isWon == true)
+             {
+                  Mario mario = new Mario();
+                  mario.Show();
+                //timer2.Enabled = false;
+                //timer2.Stop();
+                  mario.Closed += (s, arg) => this.Close();
+                  form1.Hide();
+                  timer1.Enabled = false;
+                  timer1.Stop();
+                
+             }
             
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if(form1.isWon==false)
+            {
+                this.Close();
+            }
         }
     }
 }

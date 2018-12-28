@@ -39,6 +39,7 @@ namespace MainGame
                 final.Closed += (s, arg) => this.Close();
                 this.Hide();
             }
+            else { MessageBox.Show("Wrong passcode"); }
         }
     }
 }

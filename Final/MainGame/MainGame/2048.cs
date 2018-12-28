@@ -33,6 +33,8 @@ namespace MainGame
         private void button1_Click(object sender, EventArgs e)
         {
             game2048.Show();
+            timer2.Enabled = true;
+            timer2.Start();
             game2048.Closed += (s, arg) => this.Close();
             this.Hide();
         }
@@ -44,6 +46,8 @@ namespace MainGame
             {
                 BirdHunting BirdHunting = new BirdHunting();
                 BirdHunting.Show();
+                timer2.Enabled = false;
+                timer2.Stop();
                 //playGameForm.Show();
                 BirdHunting.Closed += (s, arg) => this.Close();
                 game2048.Hide();
@@ -55,6 +59,21 @@ namespace MainGame
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _2048_Load(object sender, EventArgs e)
+        {
+            
         }
 
         //private void timer2_Tick(object sender, EventArgs e)

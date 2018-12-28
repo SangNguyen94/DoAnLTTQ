@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -105,6 +106,11 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "You also only have 10 chances of dodging eggs so be careful!!\r\n";
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 60000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // BirdHunting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,6 +126,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BirdHunting";
             this.Text = "BirdHunting";
+            this.Load += new System.EventHandler(this.BirdHunting_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +141,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Timer timer2;
     }
 }

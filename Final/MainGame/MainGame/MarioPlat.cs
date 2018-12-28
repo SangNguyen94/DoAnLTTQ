@@ -29,13 +29,15 @@ namespace MainGame
         {
              
             marioObjects.Show();
+            timer2.Enabled = true;
+            timer2.Start();
             this.Hide();
             marioObjects.Closed += (s, arg) => this.Close();
         }
 
         private void Mario_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -47,10 +49,22 @@ namespace MainGame
                 MarioObjects.LevelManager.Instance.SaveLevelManager("LevelManager.xml");
                 _2048 _2048 = new _2048();
                 _2048.Show();
+                timer2.Enabled = false;
+                timer2.Stop();
                 _2048.Closed += (s, arg) => this.Close();
                 marioObjects.Hide();
                 timer1.Stop();
                 timer1.Enabled = false;
+                
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if(marioObjects.isWON==false)
+            {
+                marioObjects.Close();
+                this.Close();
             }
         }
     }
