@@ -19,4 +19,4 @@ Những game có trong đồ án:
 ------
 5.Mario Bomb;
 ------
-![alt text](https://imgur.com/a/HO2PU7P.jpg)
+![alt text](https://imgur.com/a/HO2PU7P)
