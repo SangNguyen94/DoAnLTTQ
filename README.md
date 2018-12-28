@@ -27,7 +27,7 @@ Những game có trong đồ án:
 ![alt text](https://i.imgur.com/tjlqp0M.png)
 5.Mario Bomb;
 ------
-
+Vui lòng giải nén 2 file "EscapeFromStress.part1.rar" và "EscapeFromStress.part2.rar" để có được file setup :) 
 
 
 
